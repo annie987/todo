@@ -1,0 +1,10 @@
+# Path to the Python interpreter in your virtual environment
+python=/usr/local/bin/python
+
+[MESSAGES CONTROL]
+
+# Customize your Pylint options as needed
+disable=C0103,C0114,C0115,C0116,W1203
+
+[REPORTS]
+output-format=text

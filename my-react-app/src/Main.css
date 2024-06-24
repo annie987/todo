@@ -1,0 +1,294 @@
+/* Body styles */
+.Main {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('pom.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Main .SelectedDate{
+  margin-left:180px;
+  font-size: 20px;
+  font-family: 'Baloo', sans-serif;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo&display=swap');
+.Header {
+  font-family: 'Baloo', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #72433c;
+  margin: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  letter-spacing: 5px;
+}
+
+.todo {
+  margin-left: 20px;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  color: #72433c;
+  letter-spacing: 5px;
+}
+
+/* App container styles */
+.App-container {
+  width: 50%;
+  max-width: 500px;
+  background-color:#f2e8d0;
+  box-shadow: 0 2px 4px #72433c;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 50px;
+  top:150px;
+}
+
+.bubbly-text {
+  font-family: 'Baloo', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #72433c;
+
+}
+
+/* Input field styles */
+.Task-Title input[type="text"],
+.Task-Description input[type="text"] {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid#72433c;
+  border-radius: 4px;
+  font-size: 14px;
+  color:#72433c;
+  font-family: 'Baloo', sans-serif;
+}
+
+.Task-Priority {
+  display: flex;
+  align-items: center;
+}
+
+.priority-label {
+  margin-left: 10px; /* Adjust the margin as needed */
+  color:#72433c;
+  font-family: 'Baloo', sans-serif;
+  font-size: 20px;
+}
+
+.priority-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.priority-button {
+  /* Add your regular button styles here */
+  padding: 5px 40px;
+  margin-left: 40px;
+}
+
+.priority-button.selected {
+  /* Add your styles to indicate the selected state */
+  background-color: brown; /* Change the background color to indicate selection */
+  color: #fff; /* Change the text color for better contrast */
+  font-weight: bold; /* Optionally make the text bold */
+}
+
+
+/* Due date styles */
+.DueDate {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  color:#72433c;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: 'Baloo', sans-serif;
+}
+
+.CalendarIcon {
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 20px;
+  color: #83580b;
+}
+
+.TaskList .SelectedDate {
+  margin-left: 200px;
+  font-size: 10px;
+  color:#83580b;
+  font-family: 'Baloo', sans-serif;
+}
+
+/* Calendar modal styles */
+.CalendarModal {
+  position: fixed;
+  top: 47%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  width: 250px;
+  width: 140px;
+  font-family: 'Baloo', sans-serif;
+}
+
+.rdtDays {
+  color: #83580b;
+}
+
+.rdtTime {
+  color: #83580b;
+}
+
+/* Create button styles */
+.create_button {
+  background-color:#83580b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  font-family: 'Baloo', sans-serif;
+}
+
+.create_button:hover {
+  background-color: #fff9af;
+  color:#83580b;
+  font-family: 'Baloo', sans-serif;
+}
+
+/* Task list styles */
+.TaskList {
+  width: 40%;
+  max-width: 600px;
+  border-radius: 15px;
+  text-align: center;
+  overflow-y: scroll;
+  position: fixed;
+  right: 50px;
+  top:130px;
+  max-height: 410px;
+  
+}
+
+.text-center {
+  font-size: 30px;
+  font-family: 'Baloo', sans-serif;
+  color: #72433c;
+  position: fixed;
+  right: 50px;
+  margin-top: -100px;
+  text-align: center;
+  padding-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+.time{
+  font-size: 25px;
+}
+
+/* Task item styles */
+.task-item {
+  display: flex;
+  justify-content: space-between; /* Update this line */
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px #72433c;
+  border-radius: 15px;
+  background-color: #f2e8d0;
+  list-style-type: none;
+  word-wrap: break-word; /* Ensure long words are broken and don't overflow */
+  font-family: 'Baloo', sans-serif;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+  text-align: left;
+  color: #784d3e;
+  width: 70%; /* Adjust the width as needed */
+  box-sizing: border-box; 
+  margin-top: 0; /* Remove top margin */
+}
+
+.task-details .title {
+  margin-bottom: -10px; /* Adjust the value as needed */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+.description {
+  font-family: 'Baloo', sans-serif;
+  font-size: 14px;
+}
+
+/* Task actions styles */
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%; /* Adjust the width as needed */
+  box-sizing: border-box;
+  margin-top: 0; /* Remove top margin */
+}
+
+.alert_due {
+  color:brown;
+  font-family: 'Baloo', sans-serif;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.edit-button {
+  background-color: transparent;
+  border: transparent;
+  color:#72433c;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.delete-button {
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: #f2e8d0;
+  display: flex;
+}
+
+.delete-button:hover {
+  background-color: lightgray;
+}
+
+.checkbox-label {
+  margin-right: 0;
+  width: 14px;
+  height: 14px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
